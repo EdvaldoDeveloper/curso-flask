@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+
+{% block conteudo %}
+
+    {% include 'components/notification.html' %}
+
+    {% for k, v in users.items() %}
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">{{ k }} => {{ v }}</li>
+        </ul>
+    {% endfor %}
+
+{% endblock %}
